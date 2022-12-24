@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Правила организации отступов: как сделать вёрстку гибкой и не допустить ошибок</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
   <div class="container">
@@ -82,7 +83,7 @@
       </figure>
 
       <p class="p">
-        Внешние отступы сверху и слева <strong>(margin-toиmargin-left)</strong> заменяются на аналогичные внутренние отступы <strong>(padding)</strong> у родителя элементов.
+        Внешние отступы сверху и слева <strong>(margin-top и margin-left)</strong> заменяются на аналогичные внутренние отступы <strong>(padding)</strong> у родителя элементов.
       </p>
 
       <img class="img" src="img/2.jpg" alt="2">
@@ -128,7 +129,7 @@
         С помощью <b>:last-child</b> мы обнуляем отступ у последнего <b>ul</b>, как показано в примере. Теперь всё работает как надо.
       </p>
 
-      <img src="img/5.jpg" alt="5">
+      <img class="img" src="img/5.jpg" alt="5">
 
       <p class="p">
         Чтобы не создавать два селектора, можно написать короче, используя псевдокласс <strong>:not</strong>. Тут мы буквально говорим следующее: «Задай отступ всем ul, но не последнему».

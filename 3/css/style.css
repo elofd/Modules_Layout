@@ -37,10 +37,12 @@ body {
 }
 
 .buttons-block {
+  font-size: 0;
   margin-bottom: 50px;
 }
 
 .buttons {
+  font-size: 16px;
   display: inline-block;
   padding: 24px 49px;
 }
@@ -118,13 +120,21 @@ body {
 }
 
 .img {
-  margin: 0 0 40px 0;
+  margin: 0;
+}
+
+.img:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .figure {
   display: inline-block;
-  margin: 0 0 40px 0;
+  margin: 0;
   max-width: 872px;
+}
+
+.figure:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .div-block:not(:last-child) {
