@@ -436,6 +436,97 @@ body {
   color: #787878;
 }
 
+/* join-us */
+.join-us {
+  border-bottom: 1px solid #DADADA;
+}
+
+.join-us-title {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.join-us-descr {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.join-us-form {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.join-us-form-top {
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.join-us-form-left {
+  width: 49%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.join-us-form-input {
+  border: 1px solid #DADADA;
+  border-radius: 50px;
+  padding: 16px 28px;
+  width: 251px;
+  height: 60px;
+}
+
+.join-us-form-select {
+  border: 1px solid #DADADA;
+  border-radius: 50px;
+  padding: 16px 28px;
+  width: 251px;
+  height: 60px;
+}
+
+.join-us-form-right {
+  width: 49%;
+}
+
+.join-us-form-textarea {
+  border: 1px solid #DADADA;
+  border-radius: 20px;
+  padding: 15px 28px;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+.join-us-form-bottom {
+  justify-content: flex-end;
+}
+
+.join-us-form-wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-us-form-btn {
+  border-radius: 50px;
+  padding: 20px 67px;
+  margin-bottom: 9px;
+}
+
+.join-us-form-check {
+  margin-right: 8px;
+}
+
+.join-us-form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.join-us-form-link {
+  text-decoration-line: underline;
+  color: #3172B9;
+}
+
 /* footer */
 .footer {
   padding: 42px 0;
