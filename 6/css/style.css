@@ -73,6 +73,32 @@ body {
   cursor: pointer;
 }
 
+.btn {
+  padding: 13px 20px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn:focus {
+  background-color: #CC9933;
+  color: #FFF;
+}
+
+.btn:hover {
+  background-color: #CC9933;
+  color: #FFF;
+}
+
+.btn:active {
+  background-color: #A47312;
+  color: #FFF;
+}
+
 .flex {
   display: flex;
 }
@@ -111,19 +137,35 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: #666666;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-phone:focus {
+  outline-offset: 2px;
+  outline: 1px solid #CC9933;
+  color: #CC9933;
+}
+
+.header-phone:hover {
+  color: #CC9933;
+}
+
+.header-phone:active {
+  outline: none;
+  color: #A47312;
 }
 
 .header-link {
+  display: inline-block;
   margin-left: auto;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
   color: #CC9933;
   background-image: url('../img/keyboard_tab.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: 24px 24px;
-  padding-left: 160px;
+  padding-left: 30px;
 }
 
 .header-nav {
@@ -143,21 +185,27 @@ body {
   margin-right: 45px;
 }
 
-.header-link-item {
+.header-item-link {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 16px;  
   line-height: 16px;
   color: #666666;
+  transition: color 0.3s ease-in-out;
 }
 
-.btn {
-  padding: 13px 20px;
-  border: 1px solid #CC9933;
-  border-radius: 10px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+.header-item-link:focus {
+  outline-offset: 2px;
+  outline: 1px solid #CC9933;
   color: #CC9933;
+}
+
+.header-item-link:hover {
+  color: #CC9933;
+}
+
+.header-item-link:active {
+  outline: none;
+  color: #A47312;
 }
 
 .header-buttons {
@@ -201,7 +249,6 @@ body {
 .special-item:not(:last-child) {
   margin-right: 24px;
   margin-bottom: 24px;
-  /* background-image: url('../img/darken.png'); */
 }
 
 .special-item:nth-child(2n) {
@@ -209,11 +256,11 @@ body {
 }
 
 .special-item-1 {
-  background-image: url('../img/special-1.png');
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/special-1.png');
 }
 
 .special-item-2 {
-  background-image: url('../img/special-2.png');
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/special-2.png');
 }
 
 .special-item-3 {
@@ -265,6 +312,30 @@ body {
   background-repeat: no-repeat;
   background-position: right center;
   width: 100px;
+}
+
+.special-offers-link:active {
+  color: #FFF;
+}
+
+.link {
+  color: #CC9933;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:focus {
+  color: #CC9933;
+  outline-offset: 2px;
+  outline: 1px solid #CC9933;
+}
+
+.link:hover {
+  color: #F0BF5F;
+}
+
+.link:active {
+  color: #A47312;
+  outline: none;
 }
 
 /* about-us */
@@ -338,6 +409,10 @@ body {
   background-repeat: no-repeat;
   background-position: center right;
   padding-right: 15px;
+}
+
+.services-link:focus {
+  outline: none;
 }
 
 .services-descr {
@@ -505,19 +580,21 @@ body {
 }
 
 .accommodation-link-div {
-  padding-top: 373px;
-  padding-left: 54px;
-}
-
-.accommodation-link {
+  display: inline-block;
+  background-image: url('../img/accommodation-white-join.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 15px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
   color: #FFF;
-  background-image: url('../img/accommodation-white-join.svg');
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  padding-right: 20px;
+}
+
+.accommodation-link {
+  display: block;
+  padding-top: 373px;
+  padding-left: 54px;
 }
 
 /* want-tour */
@@ -676,14 +753,19 @@ body {
   background-repeat: no-repeat;
 }
 
-.footer-social-1 {
-  background-image: url('../img/footer-med-1.svg');
+.footer-social-link svg {
+  fill: #999999;
+  transition: fill 0.3s ease-in-out;
 }
 
-.footer-social-2 {
-  background-image: url('../img/footer-med-2.svg');
+.footer-social-link:focus svg {
+  fill: #CC9933;
 }
 
-.footer-social-3 {
-  background-image: url('../img/footer-med-3.svg');
+.footer-social-link:hover svg {
+  fill: #CC9933;
+}
+
+.footer-social-link:active svg {
+  fill: #A47312;
 }
